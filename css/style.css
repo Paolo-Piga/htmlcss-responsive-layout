@@ -81,9 +81,14 @@ h3{
     font-size: 20px;
 }
 
-.card.dev>p{
-
+.card.testimonials{
+    display: flex;
+    border-radius: 12px;
+    gap: 30px;
+    height: 400px;
+    background-color: #9593e6;
 }
+
 /* regole card img */
 .card.mobile img{
     
@@ -165,6 +170,11 @@ h3{
     gap: 15px;
     background-color: white;
     height: 1400px;
+}
+
+.white>h4{
+    color: #9593e6;
+    
 }
 @media (max-width:480px) {
     .card.mobile{
