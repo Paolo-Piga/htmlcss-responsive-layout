@@ -32,24 +32,28 @@ a{
 
 .jumbo{
     background-color: white;
-    height: 1500px;
+    height: 2800px;
     margin-top: 50px;
     width: 100%;
+    gap: 35px;
 }
 
-.demo{
+.card{
     display: flex;
+    border-radius: 12px;
+    
     gap: 10px;
-    height: 500px;
+    height: 550px;
     background-color: rgb(126, 156, 255);
 }
 
 h3{
     color: blue;
+    padding-top: 20px;
 }
 
-.demo>p{
-    padding: 0 40px 0 40px;
+.card>p{
+    padding: 0 23px 0 23px;
 }
 
 #app-store{
@@ -63,25 +67,27 @@ h3{
 }
 
 
-.demo img{
+.card img{
     
     width: 80%;
-    height: 30%;
+    height: 50%;
     
 }
 
 @media (max-width:480px) {
-    .demo{
-        justify-content: center;
+    .card{
+        justify-content: space-between;
+        text-align: center;
         flex-direction: column;
         align-items: center;
         width: 80%;
-        
+       
     }
 
     .jumbo{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         margin-top: 50px;
         
     }
