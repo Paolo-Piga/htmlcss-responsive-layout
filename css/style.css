@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
+/* regole container ed header */
 #container{
-    height: 2000px;
+    height: 2500px;
     max-width: 2000px;
     
 }
@@ -14,9 +15,10 @@ header{
     
     height: 200px;
     width: 100%;
-    
+    margin-bottom: 40px;
 }
 
+/* regole banner */
 a{
     text-decoration: none;
     color: white;
@@ -30,25 +32,43 @@ a{
     align-items: center;
 }
 
+/* regole jumbo */
 .jumbo{
     background-color: white;
-    height: 2800px;
+    height: 2400px;
     margin-top: 50px;
     width: 100%;
-    gap: 35px;
+    
 }
 
-.card{
+/* regole cards */
+.card.mobile{
     display: flex;
     border-radius: 12px;
-    
     gap: 10px;
     height: 550px;
     background-color: rgb(126, 156, 255);
 }
 
+.card{
+    display: flex;
+    border-radius: 12px;
+    gap: 30px;
+    height: 400px;
+    background-color: rgb(126, 156, 255);
+}
+
+.card.dev{
+    display: flex;
+    border-radius: 12px;
+    gap: 10px;
+    height: 500px;
+    background-color: white;
+}
+
 h3{
     color: blue;
+    font-size: 25px;
     padding-top: 20px;
 }
 
@@ -56,26 +76,98 @@ h3{
     padding: 0 23px 0 23px;
 }
 
-#app-store{
-    padding: 15px 40px 15px 40px;
-    background-color: blue;
-    border-radius: 12px;
-}
-
-.fa-apple{
+.card.dev>h3{
+    color: black;
     font-size: 20px;
 }
 
+.card.dev>p{
 
-.card img{
+}
+/* regole card img */
+.card.mobile img{
     
     width: 80%;
     height: 50%;
     
 }
 
+.card.dev>img{
+    width: 60%;
+    height: 70%;
+    margin-top: 20px;
+}
+
+/* regole apple store */
+#app-store{
+    padding: 15px 40px 15px 40px;
+    background-color: blue;
+    border-radius: 12px;
+}
+
+/* regole icone */
+.fa-apple{
+    font-size: 20px;
+}
+
+.fa-file-code, .fa-laptop-code, .fa-bullhorn, .fa-compass-drafting{
+    
+    font-size: 80px;
+    color: blue;
+}
+
+.fa-arrow-down{
+    font-size: 30px;
+    padding: 10px;
+    background-color: #9593e6;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* regole main e le sue sections */
+
+.main{
+    max-width: 2000px;
+    height: 3000px;
+}
+.violet{
+    background-color: #9593e6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 1300px;
+}
+
+.violet>img{
+    width: 80%;
+    height: 20%;
+}
+
+.violet>h2{
+    font-size: 40px;
+    color: white;
+}
+
+.violet>p{
+    padding: 0 40px 0 40px;
+}
+
+
+.white{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+    background-color: white;
+    height: 1400px;
+}
 @media (max-width:480px) {
-    .card{
+    .card.mobile{
         justify-content: space-between;
         text-align: center;
         flex-direction: column;
@@ -83,12 +175,38 @@ h3{
         width: 80%;
        
     }
-
     .jumbo{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        margin-top: 50px;
+       
+        
+        
+    }
+    .card{
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .card.dev{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    .card.testimonials{ 
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
         
     }
 }
