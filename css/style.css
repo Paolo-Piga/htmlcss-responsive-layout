@@ -61,7 +61,7 @@ a{
 .card.dev{
     display: flex;
     border-radius: 12px;
-    gap: 10px;
+    gap: 0;
     height: 500px;
     background-color: white;
 }
@@ -72,11 +72,11 @@ h3{
     padding-top: 20px;
 }
 
-.card>p{
+.card p{
     padding: 0 23px 0 23px;
 }
 
-.card.dev>h3{
+.card.dev h3{
     color: black;
     font-size: 20px;
 }
@@ -85,8 +85,14 @@ h3{
     display: flex;
     border-radius: 12px;
     gap: 30px;
-    height: 400px;
+    height: 530px;
     background-color: #9593e6;
+    color: white;
+}
+
+.card.testimonials p{
+    line-height: 30px;
+    font-size: 20px;
 }
 
 /* regole card img */
@@ -97,12 +103,58 @@ h3{
     
 }
 
-.card.dev>img{
+.card.dev img{
     width: 60%;
-    height: 70%;
+    height: 50%;
     margin-top: 20px;
 }
 
+.card.testimonials div{
+    background-image: url(/img/testimonial1.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+#test2{
+    background-image: url(/img/testimonial2.jpg);
+}
+
+#test3{
+    background-image: url(/img/testimonial3.jpg);
+}
+
+.card.testimonials p{
+    padding: 0;
+}
+
+.card.testimonials h4{
+    font-size: 22px;
+}
+/* color: #9593e6; */
+.card.benefits{
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    
+}
+
+.card.benefits h1,.card.benefits h2{
+    color: #9593e6;
+}
+
+.card.benefits h1{
+    font-size: 40px;
+}
+
+.card.benefits h2{
+    font-size: 27px;
+}
 /* regole apple store */
 #app-store{
     padding: 15px 40px 15px 40px;
@@ -147,17 +199,22 @@ h3{
     height: 1300px;
 }
 
-.violet>img{
+.violet.second{
+    height: 3000px;
+    gap: 20px;
+}
+
+.violet img{
     width: 80%;
     height: 20%;
 }
 
-.violet>h2{
+.violet h2{
     font-size: 40px;
     color: white;
 }
 
-.violet>p{
+.violet p{
     padding: 0 40px 0 40px;
 }
 
@@ -167,14 +224,22 @@ h3{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    gap: 15px;
+    gap: 20px;
     background-color: white;
-    height: 1400px;
+    height: 2200px;
+    margin: 0 auto;
 }
 
-.white>h4{
+.white h2{
     color: #9593e6;
+    width: 80%;
+}
+
+.white p{
+    width: 80%;
+    font-size: 20px;
     
+    line-height: 30px;
 }
 @media (max-width:480px) {
     .card.mobile{
@@ -212,7 +277,7 @@ h3{
 
     .card.testimonials{ 
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         text-align: center;
         flex-direction: column;
         align-items: center;
